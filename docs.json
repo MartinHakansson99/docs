@@ -35,6 +35,10 @@
         ]
       },
       {
+      "tab": "Changelog",
+      "href": "changelog/main"
+    },
+      {
         "tab": "API Reference",
         "groups": [
           {

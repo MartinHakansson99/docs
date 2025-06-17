@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "FeedOpt",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -17,26 +17,41 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
             "group": "Essentials",
             "pages": [
               "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "essentials/sources",
+              "essentials/feeds",
+              "essentials/mapping",
+              "essentials/items",
+              "essentials/organizations",
+              "essentials/notifications"
+            ]
+          },
+          {
+            "group": "Rules",
+            "pages": [
+              "rules/introduction",
+              "rules/conditions",
+              "rules/actions"
             ]
           }
         ]
       },
       {
       "tab": "Changelog",
-      "href": "changelog/main"
+      "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "changelog/main"
+            ]
+          }
+        ]
     },
       {
         "tab": "API Reference",
@@ -68,7 +83,7 @@
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://feedopt.se/blog",
           "icon": "newspaper"
         }
       ]
@@ -93,9 +108,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/feedopt",
+      "github": "https://github.com/feedopt"
     }
   }
 }

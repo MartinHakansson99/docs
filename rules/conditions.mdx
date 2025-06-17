@@ -1,0 +1,186 @@
+---
+title: 'Rule Conditions'
+description: 'Explore all the available conditions you can use in your rules.'
+icon: 'list-checks'
+---
+
+## Conditions
+
+Conditions are used to check your data and determine if the actions in your rule should be executed.
+
+### General
+
+<CardGroup>
+  <Card title="Always true">
+    This condition is always met. Useful for creating rules that should run for all products.
+    
+    **Operator:** `always_true`
+  </Card>
+</CardGroup>
+
+### Text
+
+<CardGroup>
+  <Card title="Contains">
+    Checks if the input text contains a specific value. The comparison is case-insensitive.
+
+    **Operator:** `contains`
+  </Card>
+  <Card title="Does not contain">
+    Checks if the input text does not contain a specific value. The comparison is case-insensitive.
+    
+    **Operator:** `doesnt_contain`
+  </Card>
+  <Card title="Is equal to">
+    Checks if the input text is exactly equal to a specific value.
+    
+    **Operator:** `is_equal_to`
+  </Card>
+  <Card title="Is not equal to">
+    Checks if the input text is not equal to a specific value.
+    
+    **Operator:** `is_not_equal_to`
+  </Card>
+  <Card title="Starts with">
+    Checks if the input text starts with a specific value. Can be case-sensitive.
+    
+    **Operator:** `starts_with`
+  </Card>
+  <Card title="Does not start with">
+    Checks if the input text does not start with a specific value. Can be case-sensitive.
+    
+    **Operator:** `doesnt_start_with`
+  </Card>
+  <Card title="Ends with">
+    Checks if the input text ends with a specific value. Can be case-sensitive.
+    
+    **Operator:** `ends_with`
+  </Card>
+  <Card title="Does not end with">
+    Checks if the input text does not end with a specific value. Can be case-sensitive.
+    
+    **Operator:** `doesnt_end_with`
+  </Card>
+  <Card title="Is empty">
+    Checks if the input text is empty.
+    
+    **Operator:** `is_empty`
+  </Card>
+  <Card title="Is not empty">
+    Checks if the input text is not empty.
+    
+    **Operator:** `isnt_empty`
+  </Card>
+  <Card title="Length exceeds">
+    Checks if the length of the input text exceeds a specific number.
+    
+    **Operator:** `length_exceeds`
+  </Card>
+  <Card title="Length does not exceed">
+    Checks if the length of the input text does not exceed a specific number.
+    
+    **Operator:** `length_doesnt_exceed`
+  </Card>
+  <Card title="Word count exceeds">
+    Checks if the word count of the input text exceeds a specific number.
+    
+    **Operator:** `word_count_exceeds`
+  </Card>
+  <Card title="Word count does not exceed">
+    Checks if the word count of the input text does not exceed a specific number.
+    
+    **Operator:** `word_count_doesnt_exceed`
+  </Card>
+</CardGroup>
+
+### Multiple Values
+
+These conditions allow you to check against a list of values provided in a textarea (one value per line).
+
+<CardGroup>
+  <Card title="Contains any">
+    Checks if the input text contains any of the specified values.
+    
+    **Operator:** `contains_any`
+  </Card>
+  <Card title="Does not contain any">
+    Checks if the input text does not contain any of the specified values.
+    
+    **Operator:** `doesnt_contain_any`
+  </Card>
+  <Card title="Is equal to any">
+    Checks if the input text is equal to any of the specified values.
+    
+    **Operator:** `is_equal_to_any`
+  </Card>
+  <Card title="Is not equal to any">
+    Checks if the input text is not equal to any of the specified values.
+    
+    **Operator:** `isnt_equal_to_any`
+  </Card>
+</CardGroup>
+
+### Number
+
+<CardGroup>
+  <Card title="Is greater than">
+    Checks if the input number is greater than a specific value.
+    
+    **Operator:** `is_greater_than`
+  </Card>
+  <Card title="Is greater or equal">
+    Checks if the input number is greater than or equal to a specific value.
+    
+    **Operator:** `is_greater_or_equal`
+  </Card>
+  <Card title="Is less than">
+    Checks if the input number is less than a specific value.
+    
+    **Operator:** `is_less_than`
+  </Card>
+  <Card title="Is less or equal">
+    Checks if the input number is less than or equal to a specific value.
+    
+    **Operator:** `is_less_or_equal`
+  </Card>
+  <Card title="Is in highest">
+    Checks if the value is among the highest N values for this field across all products.
+    
+    **Operator:** `is_in_highest`
+  </Card>
+  <Card title="Is in lowest">
+    Checks if the value is among the lowest N values for this field across all products.
+    
+    **Operator:** `is_in_lowest`
+  </Card>
+</CardGroup>
+
+### Advanced
+
+<CardGroup>
+  <Card title="Matches regex">
+    Checks if the input text matches a regular expression.
+    
+    **Operator:** `matches_regex`
+  </Card>
+  <Card title="Does not match regex">
+    Checks if the input text does not match a regular expression.
+    
+    **Operator:** `doesnt_match_regex`
+  </Card>
+</CardGroup>
+
+### GTIN
+
+<CardGroup>
+  <Card title="Is valid GTIN">
+    Checks if the input value is a valid GTIN (GTIN-8, GTIN-12, GTIN-13, GTIN-14).
+    
+    **Operator:** `gtin_is_valid`
+  </Card>
+  <Card title="Is not valid GTIN">
+    Checks if the input value is not a valid GTIN.
+    
+    **Operator:** `gtin_is_not_valid`
+  </Card>
+</CardGroup> 

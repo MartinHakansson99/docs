@@ -1,0 +1,164 @@
+---
+title: 'Rule Actions'
+description: 'Explore all the available actions you can use in your rules.'
+icon: 'bolt'
+---
+
+## Actions
+
+Actions are performed when the conditions of your rule are met. They allow you to modify your data.
+
+### Text
+
+<CardGroup>
+    <Card title="Set value to">
+        Sets the value of the field to a new specified value. You can use placeholders for other fields.
+        
+        **Operator:** `set_value_to`
+    </Card>
+    <Card title="Append value">
+        Appends a specified value to the existing field value.
+        
+        **Operator:** `append_value`
+    </Card>
+    <Card title="Copy value">
+        Copies the value from another field.
+        
+        **Operator:** `copy_value`
+    </Card>
+    <Card title="Combine value">
+        Combines multiple field values and/or static text using a template.
+        
+        **Operator:** `combine_value`
+    </Card>
+    <Card title="Search for value">
+        Searches for a value in another field and sets the current field's value from a list of corresponding replacement values.
+        
+        **Operator:** `search_for_value`
+    </Card>
+    <Card title="Replace text">
+        Finds and replaces text. Can be case-sensitive or use regular expressions.
+        
+        **Operator:** `replace_text`
+    </Card>
+    <Card title="Lookup and replace">
+        Looks for an exact match in a list of values and replaces it with a corresponding value from another list.
+        
+        **Operator:** `lookup_and_replace`
+    </Card>
+    <Card title="Search and replace">
+        Searches for text and replaces it. Can handle multiple search/replace pairs.
+        
+        **Operator:** `search_and_replace`
+    </Card>
+    <Card title="Split text">
+        Splits text by a delimiter and keeps a specified part (e.g., first, last, or nth part).
+        
+        **Operator:** `split_text`
+    </Card>
+    <Card title="Maximum length">
+        Truncates the text to a maximum length, either directly or at a word boundary.
+        
+        **Operator:** `maximum_length`
+    </Card>
+    <Card title="Modify text">
+        Performs various text modifications like changing case, removing characters, or stripping HTML.
+        
+        **Operator:** `modify_text`
+    </Card>
+</CardGroup>
+
+### Tracking and categories
+
+<CardGroup>
+    <Card title="Add UTM tracking">
+        Adds UTM tracking parameters to a URL.
+        
+        **Operator:** `add_utm_tracking`
+    </Card>
+</CardGroup>
+
+### Math
+
+<CardGroup>
+    <Card title="Round number">
+        Rounds a number up, down, or to the closest value, based on a specified increment.
+        
+        **Operator:** `round_number`
+    </Card>
+    <Card title="Reformat number">
+        Changes the decimal and thousands separators of a number.
+        
+        **Operator:** `reformat_number`
+    </Card>
+    <Card title="Calculate">
+        Performs basic arithmetic operations (multiply, divide, add, subtract) with a value or another field.
+        
+        **Operator:** `calculate`
+    </Card>
+    <Card title="Calculate date interval">
+        Calculates the time interval between two dates.
+        
+        **Operator:** `calculate_date_interval`
+    </Card>
+    <Card title="Calculate date">
+        Adds or subtracts a time duration from a date.
+        
+        **Operator:** `calculate_date`
+    </Card>
+    <Card title="Calculate sum">
+        Calculates the sum of numbers in a field (can be a list).
+        
+        **Operator:** `calculate_sum`
+    </Card>
+    <Card title="Calculate length">
+        Calculates the character length of a field.
+        
+        **Operator:** `calculate_length`
+    </Card>
+    <Card title="Calculate list length">
+        Calculates the number of items in a list.
+        
+        **Operator:** `calculate_list_length`
+    </Card>
+</CardGroup>
+
+### Item
+
+<CardGroup>
+    <Card title="Exclude item">
+        Excludes the item from being processed further or included in feeds.
+        
+        **Operator:** `exclude_item`
+    </Card>
+</CardGroup>
+
+### List
+
+<CardGroup>
+    <Card title="Sort list">
+        Sorts a list in ascending or descending order.
+        
+        **Operator:** `sort_list`
+    </Card>
+    <Card title="Slice list">
+        Extracts a portion of a list based on start and end positions.
+        
+        **Operator:** `slice_list`
+    </Card>
+    <Card title="Split text to list">
+        Converts a text string into a list by splitting it with a delimiter.
+        
+        **Operator:** `split_text_to_list`
+    </Card>
+    <Card title="Join list to text">
+        Joins the items of a list into a single text string with a specified separator.
+        
+        **Operator:** `join_list_to_text`
+    </Card>
+    <Card title="Remove duplicates from list">
+        Removes any duplicate items from a list.
+        
+        **Operator:** `remove_duplicates_from_list`
+    </Card>
+</CardGroup> 
